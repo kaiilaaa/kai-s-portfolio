@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"
+<head>
+    <meta charset="utf-8" />
+    <title> Kylasite</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="#" class="logo"> Kyla</a>
+
+        <nav class="navbar">
+
+            <a href="#About">About</a>
+            <a href="#Project">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1> Hi, I'm Kyla </h1>
+            <h3>   Currently studying Web Development </h3>
+            <p>
+                Hello World!<br /> Welcome to my portfolio, here are some information, projects and blogs
+                that I would like to share with you. I am interested about web development.
+            </p>
+            <p>
+
+            </p>
+        </div>
+        <div class="home-img">
+            <img src="myy.jpg" alt="" width="300px" height="400px">
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <h1 class="heading"> ABOUT ME</h1>
+
+        <div class="about-img">
+            <img src="me.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h1>MAWD student at STI College Angeles</h1>
+            <p>
+                I am Kyla Catherine B. Yalung. A student from a program
+                I.T. in Mobile App and Web Development.
+            </p>
+            <h2> Skills: </h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li> Java</li>
+                <li>Android Studio</li>
+            </ul>
+
+
+        </div>
+
+        <section class="projects" id="projects">
+            <div class="projects">
+                <h1> MY PROJECTS: </h1>
+
+                <img src="proj.png" width:"200px" height="300px">
+                <img src="proj2.png" width:"200px" height="300px">
+                <img src="proj3.png" width:"200px" height="300px">
+            </div>
+
+        </section>
+
+
+    </section>
+    <section class="blog" id="blog">
+        <h1>Tech Related Blog</h1>
+        <img src="blogg.png" width:"500px" height="550px">
+        <article class="blogg" id="blogg">
+            <h2>Top Technology Trends and Jobs</h2>
+            <p>
+                Technology today is evolving at a rapid pace, enabling faster change and progress, causing an acceleration of the rate of change. However, it is not only technology trends and emerging technologies that are evolving, a lot more has changed, making IT professionals realize that their role will not stay the same in the contactless world tomorrow. And an IT professional in 2024 will constantly be learning, unlearning, and relearning (out of necessity, if not desire).
+
+                What does this mean for you? It means staying current with emerging technologies and latest technology trends. And it means keeping
+                your eyes on the future to know which skills you’ll need to know to secure a safe job tomorrow and even
+                learn how to get there. Here are the top 18 emerging technology trends you should watch for and make an attempt at in 2024,
+                and possibly secure one of the jobs that will be created by these new technology trends. Starting the list of new tech trends with the
+                talk of the town, gen-AI!<a href="https://www.simplilearn.com/top-technology-trends-and-jobs-article" target="_blank">Read more</a>
+            </p>
+        </article>
+        <br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <section class="contact" id="contact">
+        <h1> Message me:</h1>
+        <div id="contact">
+            <div id="contact">
+                <p><a href="https://facebook.com"><box-icon type='logo' name='facebook-circle'></box-icon>FB: Kyla Catherine Yalung</a></p>
+                <p><a href="https://mailtoo.com">Gmail:kylacatherineyalung</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const aboutLink = document.querySelector('a[href="#About"]');
+            const projectsLink = document.querySelector('a[href="#Project"]');
+            const contactLink = document.querySelector('a[href="#contact"]');
+            const blogLink = document.querySelector('a[href="#blog"]');
+
+            aboutLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            projectsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            contactLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            blogLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+            });
+
+        });
+    </script>
+</body>
+</html>
